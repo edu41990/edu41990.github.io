@@ -16,13 +16,13 @@ OBSERVAÇÕES:
 
 const WebSocket = require('ws'),
     { murmur2 } = require('murmurhash-js'),
-    buffers = require('./Files/buffers'),
-    algorithm = require('./Files/algorithm'),
-    Reader = require('./Files/reader'),
-    Entity = require('./Files/entity'),
+    buffers = require('./buffers'),
+    algorithm = require('./algorithm'),
+    Reader = require('./reader'),
+    Entity = require('./entity'),
     requester = require("request-promise"),
-    logger = require("./Files/logger.js"),
-    config = require('./Files/info.json');
+    logger = require("./logger.js"),
+    config = require('./info.json');
 
 const userBots = [];
 let userWS = null,
